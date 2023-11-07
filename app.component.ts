@@ -17,7 +17,7 @@ import { EmpolyeeService } from './empolyee.service';
 })
 export class AppComponent implements OnInit{
   title = 'travluk';
-  view:boolean=false
+  view:boolean=true
   newEmp!:FormGroup
   empArray:any[]=[]
   getEmpInfo:any[]=[]
