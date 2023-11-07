@@ -35,7 +35,7 @@ export class AppComponent implements OnInit{
     
   }
   addEmp(){
-    this.view=true
+    this.view=false
   }
   submitForm(data:FormGroup){
     this.searchItem=false
