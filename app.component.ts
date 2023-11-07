@@ -17,18 +17,18 @@ import { EmpolyeeService } from './empolyee.service';
 })
 export class AppComponent implements OnInit{
   title = 'travluk';
-  view:boolean=true
+  view:boolean=false
   newEmp!:FormGroup
   empArray:any[]=[]
   getEmpInfo:any[]=[]
-  searchItem:boolean=false
+  searchItem:boolean=true
   constructor(private fb:FormBuilder,private empolyee:EmpolyeeService){}
   ngOnInit(){
     this.newEmp=this.fb.group({
-      id:['',[Validators.required]],
+      id:['',[Validators]],
       name:['',[Validators.required]],
       email:['',[Validators.required]], 
-      age:['',[Validators.required]],
+      age:['',[Validators]],
       salary:['',[Validators.required]],
     })
     this.getData()
@@ -38,10 +38,10 @@ export class AppComponent implements OnInit{
     this.view=false
   }
   submitForm(data:FormGroup){
-    this.searchItem=false
+    this.searchItem=true
 console.log(data.value);
-this.empolyee.submitForm(data.value).subscribe((res)=>{
-  console.log(res);
+this.empolyee.submitForm(data).subscribe((res)=>{
+  console.log(res.value);
 this.getData()
   
 })
