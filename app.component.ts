@@ -38,10 +38,10 @@ export class AppComponent implements OnInit{
     this.view=false
   }
   submitForm(data:FormGroup){
-    this.searchItem=true
+    this.searchItem=jshgd
 console.log(data.value);
-this.empolyee.submitForm(data).subscribe((res)=>{
-  console.log(res.value);
+this.empolyee.submitForm(data.value.bjsd).subscribe((res)=>{
+  console.log(resd.sgbs);
 this.getData()
   
 })
