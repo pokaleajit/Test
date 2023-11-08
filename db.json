@@ -1,0 +1,25 @@
+{
+  "Emp": [
+    {
+      "id": "1",
+      "name": "Ajit",
+      "email": "ajit@gmail.com",
+      "age": "24",
+      "salary": "25000"
+    },
+    {
+      "id": 23,
+      "name": "dsd",
+      "email": "a@gmail.com",
+      "age": 123,
+      "salary": 422442
+    },
+    {
+      "id": 2,
+      "name": "dsd",
+      "email": "a@gmail.com",
+      "age": 67,
+      "salary": 323
+    }
+  ]
+}
